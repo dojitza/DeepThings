@@ -1,0 +1,5 @@
+﻿deepthings
+obj
+models/yolo.weights
+distriot/libdistriot.so
+distriot/libdistriot.a
