@@ -33,8 +33,8 @@ int main(int argc, char **argv){
    uint32_t partitions_w = get_int_arg(argc, argv, "-m", 5);
    uint32_t fused_layers = get_int_arg(argc, argv, "-l", 16);
 
-   char network_file[30] = "models/yolo.cfg";
-   char weight_file[30] = "models/yolo.weights";
+   char network_file[30] = NETWORK_FILE;
+   char weight_file[30] = WEIGHT_FILE;
 
    if(0 == strcmp(get_string_arg(argc, argv, "-mode", "none"), "start")){  
       printf("start\n");
