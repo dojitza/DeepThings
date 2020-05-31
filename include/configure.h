@@ -25,8 +25,8 @@
 
 /*Configuration parameters for DistrIoT*/
 #define GATEWAY_PUBLIC_ADDR "192.168.100.35"
-#define GATEWAY_LOCAL_ADDR "192.168.100.35"
-#define EDGE_ADDR_LIST    {"192.168.100.49", "192.168.100.50"}
+#define GATEWAY_LOCAL_ADDR "192.168.100.49"
+#define EDGE_ADDR_LIST    {"192.168.100.35", "192.168.100.50"}
 #define MAX_EDGE_NUM 2
 #define FRAME_NUM 4
 
