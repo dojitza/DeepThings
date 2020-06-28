@@ -38,6 +38,12 @@ int main(int argc, char **argv){
 
    if(0 == strcmp(get_string_arg(argc, argv, "-mode", "none"), "start")){  
       printf("start\n");
+
+      time_t mytime = time(NULL);
+      char * time_str = ctime(&mytime);
+      time_str[strlen(time_str)-1] = '\0';
+      printf("Current Time : %s\n", time_str);
+
       exec_start_gateway(START_CTRL, TCP, GATEWAY_PUBLIC_ADDR);
    }else if(0 == strcmp(get_string_arg(argc, argv, "-mode", "none"), "gateway")){
       printf("Gateway device\n");

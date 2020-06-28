@@ -157,6 +157,13 @@ void deepthings_merge_result_thread(void *arg){
       set_model_input(model, fused_output);
       forward_all(model, model->ftp_para->fused_layers);   
       draw_object_boxes(model, get_blob_frame_seq(temp));
+      
+      time_t mytime = time(NULL);
+      char * time_str = ctime(&mytime);
+      time_str[strlen(time_str)-1] = '\0';
+      printf("Completed image at : %s\n", time_str);
+
+
       free_image_holder(model, img);
       free_blob(temp);
 #if DEBUG_FLAG
