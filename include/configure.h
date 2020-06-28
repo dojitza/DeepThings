@@ -30,7 +30,7 @@
 #define MAX_EDGE_NUM 3
 #define FRAME_NUM 4
 
-#define NETWORK_FILE "models/yolov2-tiny.cfg"
-#define WEIGHT_FILE "models/yolov2-tiny.weights"
+#define NETWORK_FILE "models/yolov2.cfg"
+#define WEIGHT_FILE "models/yolov2.weights"
 
 #endif
