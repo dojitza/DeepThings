@@ -21,7 +21,7 @@
 
 /*Print timing and communication size information*/
 #define DEBUG_TIMING 1
-#define DEBUG_COMMU_SIZE 0
+#define DEBUG_COMMU_SIZE 1
 
 /*Configuration parameters for DistrIoT*/
 #define GATEWAY_PUBLIC_ADDR "192.168.100.49"
