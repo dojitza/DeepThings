@@ -1,0 +1,6 @@
+./deepthings -mode gateway -total_edge 3 -n 5 -m 5 -l 16	x86_virtual
+./deepthings -mode data_src -edge_id 0 -n 5 -m 5 -l 16          50
+./deepthings -mode non_data_src -edge_id 1 -n 5 -m 5 -l 16	49
+./deepthings -mode non_data_src -edge_id 2 -n 5 -m 5 -l 16	jetson
+./deepthings -mode start
+
